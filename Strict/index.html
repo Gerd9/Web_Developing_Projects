@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
+    <!--This are the styles of the html (general styles). -->
     <style>
       h1,
       h2,
@@ -38,15 +38,40 @@
         width: 1100px;
         margin: 0 auto;
       }
+
+      .c1 {
+        color: #2d3950;
+      }
+
+      .c2 {
+        color: #999;
+      }
+
+      .caja-servicio {
+        width: 33.33333%;
+        text-align: center;
+        padding: 0 15px;
+      }
+
+      .caja-servicio img {
+        margin-bottom: 15px;
+      }
+
+      .caja-servicio h5 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
     </style>
   </head>
   <body style="margin: 0; padding: 0">
+    <!--Nav bar starts-->
     <div class="bg-1">
       <div class="contenedor" style="padding: 30px">
         <img src="Strict-assets/logo-strict.png" alt="" />
       </div>
     </div>
-
+    <!--Nav bar ends-->
+    <!--Header (carousel)-->
     <header
       style="
         background: url(Strict-assets/bg-header.jpg);
@@ -79,10 +104,13 @@
         </button>
       </div>
     </header>
-
+    <!--Header (carousel) ends-->
+    <!--Simple sections starts-->
     <section class="bg-1" id="simple" style="padding: 100px 0">
       <div class="contenedor" style="padding: 100px 0; text-align: center">
-        <h3 style="font-size: 40px; color: #2d3950">Simple & pure design</h3>
+        <h3 class="c1" style="font-size: 40px; color: #2d3950">
+          Simple & pure design
+        </h3>
         <p style="color: #999">
           Designers everywhere gush with admiration upon seeing a web design and
           exclaim "its beautiful, it's so clean!". There are a countless number
@@ -92,41 +120,47 @@
         </p>
       </div>
     </section>
-
-    <section id="servicios">
-      <div class="contenedor">
+    <!--Simple sections ends-->
+    <!--Services sections starts-->
+    <section id="servicios" style="padding: 90px 0">
+      <div class="contenedor" style="display: flex">
         <div class="caja-servicio">
           <img src="Strict-assets/icon-movil.jpg" alt="" />
-          <h5>Optimized for all devices</h5>
-          <span>
+          <h5 class="c1">Optimized for all devices</h5>
+          <span class="c2">
             STRICT has been designed to be fully responsive on all devices
           </span>
         </div>
+
         <div class="caja-servicio">
           <img src="Strict-assets/icon-enviar.jpg" alt="" />
-          <h5>Optimized for all devices</h5>
-          <span>
+          <h5 class="c1">Optimized for all devices</h5>
+          <span class="c2">
             This multipurpose theme is especially created to be used for
             different projects.
           </span>
         </div>
+
         <div class="caja-servicio">
           <img src="Strict-assets/icon-voz.jpg" alt="" />
-          <h5>Optimized for all devices</h5>
-          <span>
+          <h5 class="c1">Optimized for all devices</h5>
+          <span class="c2">
             This multipurpose theme is especially created to be used for
             different projects.
           </span>
         </div>
       </div>
     </section>
-
+    <!--Services sections ends-->
+    <!--Showcase sections starts-->
     <section id="showcase">
+      <!--Header-->
       <div class="encabezado">
         <h2>Showcase your work like a pro</h2>
         <span>Contact me if you like my work</span>
       </div>
-
+      <!--Header ends-->
+      <!--galery-->
       <div class="galeria">
         <div class="caje-galeria">
           <img src="Strict-assets/show-1.jpg" alt="" />
@@ -147,8 +181,10 @@
           <img src="Strict-assets/show-6.jpg" alt="" />
         </div>
       </div>
+      <!--Galery ends-->
     </section>
-
+    <!--Showcase sections ends-->
+    <!--Form begins here-->
     <section id="stay" style="background: url(Strict-assets/bg-stay.jpg)">
       <div class="encabezado">
         <h2>Stay with us</h2>
@@ -169,7 +205,8 @@
         </div>
       </form>
     </section>
-
+    <!--Form ends-->
+    <!--Footer starts!!-->
     <section id="footer">
       <span>copyright 2019 STRICT</span>
       <div class="redes-sociales">
@@ -187,5 +224,6 @@
         </a>
       </div>
     </section>
+    <!--Footer ends!!!-->
   </body>
 </html>
