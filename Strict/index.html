@@ -61,6 +61,51 @@
         font-size: 20px;
         margin-bottom: 15px;
       }
+
+      .pd-90 {
+        padding: 90px 0;
+      }
+
+      .fs-40 {
+        font-size: 40px;
+      }
+
+      .row {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      .caja-galeria {
+        width: 33.3333333%;
+        padding: 0 10px;
+      }
+
+      .caja-galeria img {
+        width: 100%;
+        display: block;
+      }
+
+      .form-imput {
+        width: 100%;
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid #999;
+        margin-bottom: 15px;
+        border-radius: 4px;
+      }
+
+      .form-imput::placeholder {
+        color: #999;
+      }
+
+      .btn button {
+        background-color: transparent;
+        border: 1px solid #15a4fa;
+        padding: 16px 45px;
+        border-radius: 5px;
+        color: #f6f9f9;
+        font-size: 20px;
+      }
     </style>
   </head>
   <body style="margin: 0; padding: 0">
@@ -90,27 +135,16 @@
           STRICT is a responsive theme with a clean and minimal look.
         </p>
 
-        <button
-          style="
-            background-color: transparent;
-            border: 1px solid #15a4fa;
-            padding: 15px 35px;
-            border-radius: 5px;
-            color: #f6f9f9;
-            font-size: 20px;
-          "
-        >
-          Call to action
-        </button>
+        <div class="btn">
+          <button>Call to action</button>
+        </div>
       </div>
     </header>
     <!--Header (carousel) ends-->
     <!--Simple sections starts-->
     <section class="bg-1" id="simple" style="padding: 100px 0">
       <div class="contenedor" style="padding: 100px 0; text-align: center">
-        <h3 class="c1" style="font-size: 40px; color: #2d3950">
-          Simple & pure design
-        </h3>
+        <h3 class="c1 fs-40" style="color: #2d3950">Simple & pure design</h3>
         <p style="color: #999">
           Designers everywhere gush with admiration upon seeing a web design and
           exclaim "its beautiful, it's so clean!". There are a countless number
@@ -122,7 +156,7 @@
     </section>
     <!--Simple sections ends-->
     <!--Services sections starts-->
-    <section id="servicios" style="padding: 90px 0">
+    <section id="servicios" class="pd-90">
       <div class="contenedor" style="display: flex">
         <div class="caja-servicio">
           <img src="Strict-assets/icon-movil.jpg" alt="" />
@@ -153,57 +187,82 @@
     </section>
     <!--Services sections ends-->
     <!--Showcase sections starts-->
-    <section id="showcase">
-      <!--Header-->
-      <div class="encabezado">
-        <h2>Showcase your work like a pro</h2>
-        <span>Contact me if you like my work</span>
+    <section id="showcase" class="bg-1 pd-90">
+      <div class="contenedor">
+        <!--Header-->
+        <div class="encabezado" style="text-align: center; margin-bottom: 50px">
+          <h2 class="c1 fs-40">Showcase your work like a pro</h2>
+          <span class="c2">Contact me if you like my work</span>
+        </div>
+        <!--Header ends-->
+        <!--galery-->
+        <div class="galeria">
+          <div class="row">
+            <div class="caja-galeria">
+              <img src="Strict-assets/show-1.jpg" alt="" />
+            </div>
+
+            <div class="caja-galeria">
+              <img src="Strict-assets/show-2.jpg" alt="" />
+            </div>
+
+            <div class="caja-galeria">
+              <img src="Strict-assets/show-3.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="caja-galeria">
+              <img src="Strict-assets/show-4.jpg" alt="" />
+            </div>
+
+            <div class="caja-galeria">
+              <img src="Strict-assets/show-5.jpg" alt="" />
+            </div>
+
+            <div class="caja-galeria">
+              <img src="Strict-assets/show-6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--Galery ends-->
       </div>
-      <!--Header ends-->
-      <!--galery-->
-      <div class="galeria">
-        <div class="caje-galeria">
-          <img src="Strict-assets/show-1.jpg" alt="" />
-        </div>
-        <div class="caje-galeria">
-          <img src="Strict-assets/show-2.jpg" alt="" />
-        </div>
-        <div class="caje-galeria">
-          <img src="Strict-assets/show-3.jpg" alt="" />
-        </div>
-        <div class="caje-galeria">
-          <img src="Strict-assets/show-4.jpg" alt="" />
-        </div>
-        <div class="caje-galeria">
-          <img src="Strict-assets/show-5.jpg" alt="" />
-        </div>
-        <div class="caje-galeria">
-          <img src="Strict-assets/show-6.jpg" alt="" />
-        </div>
-      </div>
-      <!--Galery ends-->
     </section>
     <!--Showcase sections ends-->
     <!--Form begins here-->
-    <section id="stay" style="background: url(Strict-assets/bg-stay.jpg)">
-      <div class="encabezado">
-        <h2>Stay with us</h2>
-        <span>we ensure quality & support</span>
+    <section
+      id="stay"
+      style="background: url(Strict-assets/bg-stay.jpg)"
+      class="pd-90"
+    >
+      <div class="contenedor">
+        <div class="encabezado" style="text-align: center; margin-bottom: 20px">
+          <h2 class="fs-40" style="color: white">Stay with us</h2>
+          <span style="color: #999">we ensure quality & support</span>
+        </div>
+
+        <form action="" id="contacto">
+          <input class="form-imput" type="text" placeholder="Full Name" />
+          <input class="form-imput" type="email" placeholder="Email addres" />
+          <textarea
+            class="form-imput"
+            style="padding-bottom: 10%"
+            name=""
+            id=""
+            placeholder="Message"
+          ></textarea>
+
+          <div style="display: flex">
+            <div class="check" style="width: 70%">
+              <input id="subs" type="checkbox" />
+              <label for="subs">Subscribe Newsletter</label>
+            </div>
+            <div class="btn" style="width: 30%">
+              <button>SEND</button>
+            </div>
+          </div>
+        </form>
       </div>
-
-      <form action="" id="contacto">
-        <input type="text" placeholder="Full Name" />
-        <input type="email" placeholder="Email addres" />
-        <textarea name="" id="" placeholder="Message"></textarea>
-
-        <div class="check">
-          <input id="subs" type="checkbox" />
-          <label for="subs">Subscribe Newsletter</label>
-        </div>
-        <div class="btn">
-          <button>SEND</button>
-        </div>
-      </form>
     </section>
     <!--Form ends-->
     <!--Footer starts!!-->
