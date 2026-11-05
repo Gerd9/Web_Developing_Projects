@@ -3,110 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
     <!--This are the styles of the html (general styles). -->
-    <style>
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      span,
-      strong,
-      a,
-      button {
-        font-family: sans-serif;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 0;
-        padding: 0;
-      }
-
-      .bg-1 {
-        background-color: #f6f9f9;
-      }
-
-      .contenedor {
-        width: 1100px;
-        margin: 0 auto;
-      }
-
-      .c1 {
-        color: #2d3950;
-      }
-
-      .c2 {
-        color: #999;
-      }
-
-      .caja-servicio {
-        width: 33.33333%;
-        text-align: center;
-        padding: 0 15px;
-      }
-
-      .caja-servicio img {
-        margin-bottom: 15px;
-      }
-
-      .caja-servicio h5 {
-        font-size: 20px;
-        margin-bottom: 15px;
-      }
-
-      .pd-90 {
-        padding: 90px 0;
-      }
-
-      .fs-40 {
-        font-size: 40px;
-      }
-
-      .row {
-        display: flex;
-        margin-bottom: 20px;
-      }
-
-      .caja-galeria {
-        width: 33.3333333%;
-        padding: 0 10px;
-      }
-
-      .caja-galeria img {
-        width: 100%;
-        display: block;
-      }
-
-      .form-imput {
-        width: 100%;
-        padding: 10px;
-        background-color: transparent;
-        border: 1px solid #999;
-        margin-bottom: 15px;
-        border-radius: 4px;
-      }
-
-      .form-imput::placeholder {
-        color: #999;
-      }
-
-      .btn button {
-        background-color: transparent;
-        border: 1px solid #15a4fa;
-        padding: 16px 45px;
-        border-radius: 5px;
-        color: #f6f9f9;
-        font-size: 20px;
-      }
-    </style>
   </head>
   <body style="margin: 0; padding: 0">
     <!--Nav bar starts-->
@@ -255,7 +161,9 @@
           <div style="display: flex">
             <div class="check" style="width: 70%">
               <input id="subs" type="checkbox" />
-              <label for="subs">Subscribe Newsletter</label>
+              <label for="subs" style="color: white"
+                >Subscribe Newsletter</label
+              >
             </div>
             <div class="btn" style="width: 30%">
               <button>SEND</button>
@@ -266,23 +174,25 @@
     </section>
     <!--Form ends-->
     <!--Footer starts!!-->
-    <section id="footer">
-      <span>copyright 2019 STRICT</span>
-      <div class="redes-sociales">
-        <a href="#" target="_blank">
-          <img src="Strict-assets/icon-facebook.jpg" alt="" />
-        </a>
-        <a href="#" target="_blank">
-          <img src="Strict-assets/icon-twitter.jpg" alt="" />
-        </a>
-        <a href="#" target="_blank">
-          <img src="Strict-assets/icon-google-plus.jpg" alt="" />
-        </a>
-        <a href="#" target="_blank">
-          <img src="Strict-assets/icon-linked-in.jpg" alt="" />
-        </a>
+    <footer class="bg-1" style="padding: 30px 0">
+      <div class="contenedor" style="display: flex; align-items: center">
+        <span style="width: 60%">copyright 2019 STRICT</span>
+        <div class="redes-sociales" style="width: 40%; text-align: center">
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/?lang=es" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://workspace.google.com/products/chat/" target="_blank">
+            <i class="fa-brands fa-google-plus-g"></i>
+          </a>
+          <a href="https://www.linkedin.com/home" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
       </div>
-    </section>
+    </footer>
     <!--Footer ends!!!-->
   </body>
 </html>

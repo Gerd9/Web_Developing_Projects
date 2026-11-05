@@ -1,0 +1,115 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+strong,
+a,
+button,
+label {
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-1 {
+  background-color: #f6f9f9;
+}
+
+.contenedor {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.c1 {
+  color: #2d3950;
+}
+
+.c2 {
+  color: #999;
+}
+
+.caja-servicio {
+  width: 33.33333%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.caja-servicio img {
+  margin-bottom: 15px;
+}
+
+.caja-servicio h5 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.pd-90 {
+  padding: 90px 0;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.caja-galeria {
+  width: 33.3333333%;
+  padding: 0 10px;
+}
+
+.caja-galeria img {
+  width: 100%;
+  display: block;
+}
+
+.form-imput {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #999;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.form-imput::placeholder {
+  color: #999;
+}
+
+.btn button {
+  background-color: transparent;
+  border: 1px solid #15a4fa;
+  padding: 16px 45px;
+  border-radius: 5px;
+  color: #f6f9f9;
+  font-size: 20px;
+}
+
+.redes-sociales a {
+  background-color: #15a4fa;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.redes-sociales a i {
+  color: white;
+}
